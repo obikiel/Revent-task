@@ -41,6 +41,7 @@ Method: GET
 
 Response (200 OK):
 
+```json
     [
     {
         "id": 1,
@@ -51,6 +52,7 @@ Response (200 OK):
         "updated_at": "2025-02-14T12:00:00Z"
     }
     ]
+```
 
 ## View a Single Task
 
@@ -61,6 +63,7 @@ Method: GET
 Example: /tasks/1/
 
 Response (200 OK):
+    ```json
     [
     {
     "id": 1,
@@ -71,6 +74,7 @@ Response (200 OK):
     "updated_at": "2025-02-14T12:00:00Z"
     }
     ]
+    ```
 
 ## Update a Task
 
@@ -81,6 +85,7 @@ Method: PUT
 Example: /tasks/1/
 
 Request Body (JSON):
+```json
 [
     {
   "title": "Buy groceries and vegetables",
@@ -100,6 +105,7 @@ Response (200 OK):
   "updated_at": "2025-02-14T12:05:00Z"
 }
 ]
+```
 
 ## Delete a Task
 
@@ -121,12 +127,14 @@ Method: PATCH
 Example: /tasks/1/mark_complete/
 
 Response (200 OK):
+ ```json
+
  [
         {
     "status": "Task marked as completed"
     }
  ]
-
+```
 
 ## View All Completed Tasks
 
@@ -135,6 +143,7 @@ Endpoint: /tasks/completed_tasks/
 Method: GET
 
 Response (200)    [
+```json
 [
   {
     "id": 2,
@@ -145,6 +154,7 @@ Response (200)    [
     "updated_at": "2025-02-14T13:00:00Z"
   }
 ]
+```
 
 
 ## Get Task Count Summary
@@ -154,6 +164,7 @@ Endpoint: /task-count/
 Method: GET
 
 Response (200 OK):
+```json
 [
     {
   "total_tasks": 5,
@@ -161,3 +172,4 @@ Response (200 OK):
   "pending_tasks": 2
 }
 ]
+```

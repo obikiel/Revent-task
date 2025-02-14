@@ -16,14 +16,14 @@ http://127.0.0.1:8000/api/
   }
 
  Request Body (JSON):
-    {
+    ```json{
     "title": "Buy groceries",
     "description": "Purchase milk, eggs, and bread",
     "completed": false
     }
 
 Response (201 Created):
-    {
+   ```json{
   "id": 1,
   "title": "Buy groceries",
   "description": "Purchase milk, eggs, and bread",
@@ -60,7 +60,7 @@ Method: GET
 Example: /tasks/1/
 
 Response (200 OK):
-[
+    [
     {
     "id": 1,
     "title": "Buy groceries",
@@ -69,7 +69,7 @@ Response (200 OK):
     "created_at": "2025-02-14T12:00:00Z",
     "updated_at": "2025-02-14T12:00:00Z"
     }
-]
+    ]
 
 ## Update a Task
 

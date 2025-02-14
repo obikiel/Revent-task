@@ -16,14 +16,14 @@ http://127.0.0.1:8000/api/
   }
 
  Request Body (JSON):
-    ```json{
+    {
     "title": "Buy groceries",
     "description": "Purchase milk, eggs, and bread",
     "completed": false
     }
 
 Response (201 Created):
-   ```json{
+   {
   "id": 1,
   "title": "Buy groceries",
   "description": "Purchase milk, eggs, and bread",
@@ -31,6 +31,7 @@ Response (201 Created):
   "created_at": "2025-02-14T12:00:00Z",
   "updated_at": "2025-02-14T12:00:00Z"
 }
+    ```
 
 ## View All Tasks
 

@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 52.249.236.252 
+  - host: tasklist.52.249.236.252.nip.io
     http:
       paths:
       - path: /

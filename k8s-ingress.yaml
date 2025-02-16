@@ -15,6 +15,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: tasklist-api
+            name: tasklist-api-service
             port:
               number: 80

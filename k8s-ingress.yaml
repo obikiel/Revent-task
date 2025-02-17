@@ -11,7 +11,7 @@ spec:
   - host: tasklist.52.249.236.252.nip.io
     http:
       paths:
-      - path: /
+      - path: /api
         pathType: Prefix
         backend:
           service:

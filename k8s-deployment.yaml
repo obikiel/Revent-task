@@ -13,7 +13,7 @@ spec:
         app: tasklist-api
     spec:
       containers:
-        - name: tasklist-api
+        - name: tasklist-api:latest
           image:  obioma.azurecr.io/tasklist-api:latest 
           env:
             - name: DB_NAME

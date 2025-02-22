@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tasklist-api
-          image:  obioma.azurecr.io/tasklist-api:latest 
+          image:  obikiel.azurecr.io/tasklist-api:latest 
           env:
             - name: DB_NAME
               value: mydatabase
